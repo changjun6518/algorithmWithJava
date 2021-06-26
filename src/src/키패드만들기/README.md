@@ -2,7 +2,7 @@
 ---
 
 
-####알게된 점  
+### 알게된 점  
 ```
 StringBuilder sb = new StringBuilder();
 ```
