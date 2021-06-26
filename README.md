@@ -1,4 +1,4 @@
 "# algorithmWithJava" 
 
 
-[키패드만들기](./src/src/키패드만들기/README.md)
+[키패드만들기](./src/src/키패드만들기/)
