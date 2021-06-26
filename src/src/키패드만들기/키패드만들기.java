@@ -1,3 +1,5 @@
+package 키패드만들기;
+
 import java.io.IOException;
 
 public class 키패드만들기 {
