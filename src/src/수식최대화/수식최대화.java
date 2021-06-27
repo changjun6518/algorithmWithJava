@@ -18,7 +18,7 @@ public class 수식최대화 {
     public static long solution(String expression) {
         division(expression);
         boolean[] visited = new boolean[operator.size()];
-        per(base, result, visited, 0, 3, 3);
+//        per(base, result, visited, 0, 3, 3);
         long answer = 0;
         return answer;
     }
@@ -55,31 +55,31 @@ public class 수식최대화 {
 
     // 모든 경우의 수로 계산하고
     // 순열로 합니다
-    public static void per(ArrayList<Character> base,
-                           ArrayList<Character> result,
-                           boolean[] visited,
-                           int depth,
-                           int n,
-                           int r) {
-        if (depth == r) {
-            // 계산 해
-            for (Character c : result) {
-                System.out.printf("%c", c);
-            }
-            System.out.println();
-            return;
-        }
-        for (int i = 0; i < n; i++) {
-            if (visited[i] != true) {
-                visited[i] = true;
-                result.add(i, base.get(i));
-                result.
-                per(base, result, visited, depth + 1, n, r);
-                visited[i] = false;
-            }
-        }
-
-    }
+//    public static void per(ArrayList<Character> base,
+//                           ArrayList<Character> result,
+//                           boolean[] visited,
+//                           int depth,
+//                           int n,
+//                           int r) {
+//        if (depth == r) {
+//            // 계산 해
+//            for (Character c : result) {
+//                System.out.printf("%c", c);
+//            }
+//            System.out.println();
+//            return;
+//        }
+//        for (int i = 0; i < n; i++) {
+//            if (visited[i] != true) {
+//                visited[i] = true;
+//                result.add(i, base.get(i));
+//                result.
+//                per(base, result, visited, depth + 1, n, r);
+//                visited[i] = false;
+//            }
+//        }
+//
+//    }
 
     // 계산 함수
 //    public static String[] cal(String[] temp, String op) {
