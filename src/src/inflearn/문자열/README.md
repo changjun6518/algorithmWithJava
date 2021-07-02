@@ -21,4 +21,13 @@ iter쓰고싶으면 str을 문자배열로 바꿔줘야함
 ```
 Character.isLowerCase(c)
 ```
-Charector에 소문자 대문자 인지 확인하는 함수가 있다..
+Charector에 소문자 대문자 인지 확인하는 함수가 있다..   
+
+[문장속단어](문장속단어.java)
+```
+String 메소드
+indexof()
+subString()
+```
+띄어쓰기 만나는 지점의 인덱스를 알아내고 그 인덱스로부터   
+subString을 통해 잘라내면서 길이 파악
