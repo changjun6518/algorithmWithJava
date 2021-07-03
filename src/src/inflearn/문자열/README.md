@@ -65,3 +65,16 @@ i == str.indexOf(str.charAt(i))
 str.equalsIgnoreCase(strReverse);
 ```
 문자열 비교할때 대소문자 구분없이 같은지 다른지 판단하는 메소드
+
+[유효한팰린드롬](유효한팰린드롬.java)
+```
+str.replaceAll("[^A-Z]", "");
+```
+정규표현식을 이용한 특정문자 제거\
+^는 A-Z가 아닌것을 의미!
+
+[숫자만추출](숫자만추출.java)
+```
+Character.isDigit()
+```
+숫자인지 확인! (나는 replace 정규표현식으로 풀었음)
