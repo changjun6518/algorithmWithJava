@@ -30,4 +30,15 @@ indexof()
 subString()
 ```
 띄어쓰기 만나는 지점의 인덱스를 알아내고 그 인덱스로부터   
-subString을 통해 잘라내면서 길이 파악
+subString을 통해 잘라내면서 길이 파악     
+
+[단어뒤집기](단어뒤집기.java)
+```
+String[] arr = new String[N];
+String temp = new StringBuilder(s).reverse().toString();
+char[] s = str.toCharArray();
+```
+String[] 초기화는 위 처럼..   
+String은 한번 만들면 불변하기 때문에 변경할 경우 계속해서 새로운 객체를 생성\
+StringBuilder는 변경가능하기때문에 스트링보다 가볍다 메모리 적게 쓰니까!\
+이거 말구 문자를 toCharArray써서 인덱스 맨처음이랑 끝이랑 바꾸면서 하는 것도 방법!
