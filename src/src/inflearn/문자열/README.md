@@ -41,4 +41,12 @@ char[] s = str.toCharArray();
 String[] 초기화는 위 처럼..   
 String은 한번 만들면 불변하기 때문에 변경할 경우 계속해서 새로운 객체를 생성\
 StringBuilder는 변경가능하기때문에 스트링보다 가볍다 메모리 적게 쓰니까!\
-이거 말구 문자를 toCharArray써서 인덱스 맨처음이랑 끝이랑 바꾸면서 하는 것도 방법!
+이거 말구 문자를 toCharArray써서 인덱스 맨처음이랑 끝이랑 바꾸면서 하는 것도 방법!\
+
+[특정문자뒤집기](특정문자뒤집기.java)
+```
+!Character.isAlphabetic(c[lt])
+String.valueof(char c[])
+```
+알파벳인지 아닌지 확인
+char 배열을 String으로 만들어줌
