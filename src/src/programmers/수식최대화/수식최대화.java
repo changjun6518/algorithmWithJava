@@ -1,7 +1,6 @@
-package 수식최대화;
+package programmers.수식최대화;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class 수식최대화 {
     private static ArrayList<Long> num = new ArrayList<>();

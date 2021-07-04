@@ -1,4 +1,4 @@
-package 수식최대화;
+package programmers.수식최대화;
 
 public class 순열 {
     public static void main(String[] args) {

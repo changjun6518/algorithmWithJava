@@ -1,4 +1,4 @@
-package 키패드만들기;
+package programmers.키패드만들기;
 
 import java.io.IOException;
 
