@@ -78,3 +78,12 @@ str.replaceAll("[^A-Z]", "");
 Character.isDigit()
 ```
 숫자인지 확인! (나는 replace 정규표현식으로 풀었음)
+
+[가장짧은문자거리](가장짧은문자거리.java)
+```
+str.charAt(i)
+answer[i] = Math.min(p, answer[i]);
+```
+내가 자꾸 문자열에서 하나하나 뜯어볼때 toCharArray를 쓰려하는데\
+charAt으로 인덱스로 쉽게 접근할 수 있어서 코드가 간편해진다\
+그리고 Math 모듈?을 사용해서 가벼운 연산 비교는 사용하자
