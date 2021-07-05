@@ -1,6 +1,5 @@
-package inflearn.문자열;
+package inflearn.String;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class 압축 {

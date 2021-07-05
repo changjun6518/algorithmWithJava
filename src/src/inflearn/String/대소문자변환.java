@@ -1,7 +1,6 @@
-package inflearn.문자열;
+package inflearn.String;
 
 import java.util.Scanner;
-import java.util.regex.Pattern;
 
 public class 대소문자변환 {
 

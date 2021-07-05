@@ -1,4 +1,4 @@
-package inflearn.문자열;
+package inflearn.String;
 
 import java.util.Locale;
 import java.util.Scanner;
