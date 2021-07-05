@@ -90,3 +90,15 @@ charAt으로 인덱스로 쉽게 접근할 수 있어서 코드가 간편해진�
 
 [문자열압축](문자열압축.java)\
 문제해결능력을 요구하는 문제
+
+[압축](압축.java)
+```
+String temp = str.substring(0,7).replace('#', '1').replace('*', '0');
+int number = Integer.parseInt(temp, 2);
+answer += (char) number;
+str = str.substring(7);
+```
+substring으로 문자열 자르기\
+replace로 문자열 대체하기\
+Integer.parseInt로 진수 바꾸기\
+(char)캐스팅으로 아스키문자로 바꾸기
