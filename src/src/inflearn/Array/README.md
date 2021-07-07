@@ -10,3 +10,22 @@ nextInt()
 [보이는학생](보이는학생.java)
 
 쉽게 풀 수 있는 난이도였다.
+
+[가위바위보](가위바위보.java)
+```
+for (int i = 0; i < num; i++) {
+            if (ArrA[i] == ArrB[i]) {
+                System.out.println("D");
+            } else if (ArrA[i] == 1 && ArrB[i] == 3) {
+                System.out.println("A");
+            } else if (ArrA[i] == 2 && ArrB[i] == 1) {
+                System.out.println("A");
+            } else if (ArrA[i] == 3 && ArrB[i] == 2) {
+                System.out.println("A");
+            } else {
+                System.out.println("B");
+            }
+        }
+```
+가위바위보의 경우의 수를 따지는 방법을 생각하지 못했다..\
+비길때 -> A가 이길때 -> 나머지~!
