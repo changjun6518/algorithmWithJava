@@ -33,3 +33,11 @@ for (int i = 0; i < num; i++) {
 [피보나치수열](피보나치수열.java)
 
 so easy
+
+[소수](소수.java)
+```
+int[] ans = new int[num+1];
+for (int j = i; j <= num; j = j + i) {}
+```
+입력받은 숫자만큼 미리 배열을 만들고\
+포문으로 배수 마다 확인할 수 있게끔 한다.
