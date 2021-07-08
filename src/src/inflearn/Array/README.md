@@ -41,3 +41,11 @@ for (int j = i; j <= num; j = j + i) {}
 ```
 입력받은 숫자만큼 미리 배열을 만들고\
 포문으로 배수 마다 확인할 수 있게끔 한다.
+
+[뒤집은소수](뒤집은소수.java)
+```
+String s1 = new StringBuilder(s).reverse().toString();
+arr[i] = Integer.parseInt(s1);
+```
+난 이렇게 숫자를 뒤집었는데 강의에서는 곱셈과 더하기 나눗셈으로 뒤집었다...\
+알면 좋은 내용이였다..
