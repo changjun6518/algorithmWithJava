@@ -78,3 +78,24 @@ if (arr[i - 1][j] < now && arr[i + 1][j] < now && arr[i][j + 1] < now && arr[i][
 ```
 나는 이렇게 풀었지만..\
 음 dx,dy주고 경계값 확실히 처리해줘야한다.. 어색하긴하다
+
+[임시반장정하기](임시반장정하기.java)
+```
+for (int i = 0; i < num; i++) {
+            int cnt = 0;
+            for (int j = 0; j < num; j++) {
+                for (int k = 0; k < 5; k++) {
+                    if (arr[i][k] == arr[j][k]) {
+                        cnt++;
+                        break;
+                    }
+                }
+            }
+            if (cnt > max) {
+                max = cnt;
+                answer = i+1;
+            }
+        }
+```
+3단 포문으로 학생한명씩 반마다 체크하도록 구현하였음\
+난 처음에 조합을 구현하고 그걸 사용해서 체크하나 했더니 3단포문으로 구현할 수도 있네..\
