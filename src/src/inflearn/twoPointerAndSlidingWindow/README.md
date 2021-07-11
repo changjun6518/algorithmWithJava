@@ -49,3 +49,17 @@ while(n>0){
 }
 ```
 숫자만큼 빼고 나눠지면 그걸로 더해질 수 있다는 아이디어!
+
+[최대길이연속부분수열](최대길이연속부분수열.java)
+```
+for (int rt = 0; rt < n; rt++) {
+    if(arr[rt]==0) cnt++;
+    while (cnt > m) {
+        if(arr[lt]==0) cnt--;
+        lt++;
+    }
+    answer = Math.max(answer, rt - lt + 1);
+}
+```
+계속 while문으로 접근하려했는데 rt를 for문으로 접근하고 천천히\
+생각했으면 쉽게 풀지 않았을까...
