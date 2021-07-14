@@ -40,3 +40,14 @@ if (mapA.equals(mapB)) {
 ```
 시간창 lt, rt 사용하고 초기값 잘 넣어주고\
 저런 식으로 map을 equals로 같은지 비교가능한가보다!
+
+[K번째큰수](K번째큰수.java)
+````
+TreeSet<Integer> tree = new TreeSet<>(Collections.reverseOrder());
+tree.add();
+tree.remove();
+tree.first();
+````
+Set은 중복제거용으로 주로 사용한다\
+Collections.reverseOrder을 하면 내림차순!\
+Map과 Set에 대한 이해와 사용 공부해야겠다...!
