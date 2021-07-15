@@ -5,3 +5,12 @@
 Stack<Character> stack = new Stack<>();
 ```
 스택을 사용하는 문제! 간단한
+
+[괄호문자제거](괄호문자제거.java)
+```
+stack.size();
+stack.get();
+```
+간단한 아이디어 묻는 문제\
+size와 get을 사용할 수 있음
+
