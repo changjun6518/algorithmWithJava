@@ -33,3 +33,11 @@ if (Character.isDigit(c)) {
 [쇠막대기](쇠막대기.java)
 
 아이디어 싸움이였던 것 같은데... 쉽게 보이지 않앗다 피곤해서 그런가
+
+[공주구하기](공주구하기.java)
+```
+LinkedList<Integer> queue = new LinkedList<>();
+```
+드뎌 queue를 사용\
+사용법은 차차 사용하면서 익히자\
+poll(), offer() 등등
