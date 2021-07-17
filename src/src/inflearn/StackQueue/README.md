@@ -29,3 +29,7 @@ if (Character.isDigit(c)) {
 어차피 연산자는 stack에 안들어가니 Integer로 해도 되었고\
 숫자인 경우 Character.isDigit() 사용해서 조건문 걸 수 있었다..\
 나는 Character로 스택을 만들어서 뻘짓을 한...
+
+[쇠막대기](쇠막대기.java)
+
+아이디어 싸움이였던 것 같은데... 쉽게 보이지 않앗다 피곤해서 그런가
