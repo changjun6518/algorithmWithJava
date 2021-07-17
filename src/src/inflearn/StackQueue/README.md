@@ -41,3 +41,24 @@ LinkedList<Integer> queue = new LinkedList<>();
 드뎌 queue를 사용\
 사용법은 차차 사용하면서 익히자\
 poll(), offer() 등등
+
+[교육과정설계](교육과정설계.java)
+
+가볍게 풀 수 있었다\
+근데 queue에 대한 메소드를 정확히 알아야할 듯!?
+
+[응급실](응급실.java)
+```
+class Person {
+    int id;
+    int priority;
+
+    public Person(int id, int priority) {
+        this.id = id;
+        this.priority = priority;
+    }
+}
+
+LinkedList<Person> people = new LinkedList<>();
+```
+클래스를 만들어 그 클래스를 이용한 queue를 만드는 문제였다!
