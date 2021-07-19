@@ -13,3 +13,7 @@
 [삽입정렬](삽입정렬.java)
 
 key값을 정하고 내려오면서 자기보다 크면 한칸씩 미는 방식
+
+[LeastRecentlyUsed](LeastRecentlyUsed.java)
+
+어려워 보였는데 차근차근 해냈다 기분좋구만
