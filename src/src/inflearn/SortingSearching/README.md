@@ -31,3 +31,25 @@ Arrays.sort()
 int[] temp = arr.clone();
 ```
 깊은 복사를 해야 새로 만든 temp가 바뀌지 않는다...!
+
+[좌표정렬](좌표정렬.java)
+```
+class Point implements Comparable<Point> {
+    public int x, y;
+    Point(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+    @Override
+    public int compareTo(Point o) {
+        if (this.x == o.x) {
+            return this.y - o.y;
+        } else return this.x - o.x;
+    }
+}
+
+Collections.sort(points);
+```
+Comparable라는 인터페이스를 구현하는 것!?\
+compareTo메소드를 오버라이딩해서 오름차순이면 this - object가 음수가 되도록 리턴!\
+좋은 걸 배웠다...
