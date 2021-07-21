@@ -53,3 +53,7 @@ Collections.sort(points);
 Comparable라는 인터페이스를 구현하는 것!?\
 compareTo메소드를 오버라이딩해서 오름차순이면 this - object가 음수가 되도록 리턴!\
 좋은 걸 배웠다...
+
+[이분검색](이분검색.java)
+
+이분검색... mid , start, end로 컨트롤!!
