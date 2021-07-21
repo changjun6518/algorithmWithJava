@@ -57,3 +57,10 @@ compareTo메소드를 오버라이딩해서 오름차순이면 this - object가 
 [이분검색](이분검색.java)
 
 이분검색... mid , start, end로 컨트롤!!
+
+[뮤직비디오_결정알고리즘](뮤직비디오_결정알고리즘.java)
+```
+int lt = Arrays.stream(arr).max().getAsInt();
+int rt = Arrays.stream(arr).sum();
+```
+Arrays.stream()을 사용해서! min, max, sum을 구할 수 있음
