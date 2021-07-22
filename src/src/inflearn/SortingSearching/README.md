@@ -64,3 +64,7 @@ int lt = Arrays.stream(arr).max().getAsInt();
 int rt = Arrays.stream(arr).sum();
 ```
 Arrays.stream()을 사용해서! min, max, sum을 구할 수 있음
+
+[마구간정하기](마구간정하기.java)
+
+이것도 결정알고리즘이였는데 풀 수 있었음
