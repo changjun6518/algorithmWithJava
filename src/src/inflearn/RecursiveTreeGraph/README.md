@@ -73,3 +73,29 @@ public static void DFS(int L) {
 ```
 음 배열을 사용해서 BFS로 푸는 문제였다 \
 해설을 안보면 잘 모를 거 같다..이제 배웠으니 할 수 있겠죠
+
+[이진트리레벨탐색](이진트리레벨탐색.java)
+```
+public static void BFS(Node node) {
+    LinkedList<Node> queue = new LinkedList<>();
+    queue.offer(node);
+    int level = 1;
+    while (!queue.isEmpty()) {
+        int len = queue.size();
+        System.out.print(level + "level : ");
+        for (int i = 0; i < len; i++) {
+            Node poll = queue.poll();
+            System.out.print(poll.data + " ");
+            if (poll.lt != null) {
+                queue.offer(poll.lt);
+            }
+            if (poll.rt != null) {
+                queue.offer(poll.rt);
+            }
+        }
+        level++;
+        System.out.println();
+    }
+}
+```
+queue를 사용해서 bfs 구현!
