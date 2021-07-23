@@ -52,3 +52,24 @@ public static void preorder(Node node) {
     }
 ```
 오랜만에 이진트리순회 전위,후위, 중위에 대해 코딩해보았다..!
+
+[부분집합구하기](부분집합구하기.java)
+```
+public static void DFS(int L) {
+        if (L == num + 1) {
+            for (int i = 1; i <= num; i++) {
+                if (arr[i] == 1) {
+                    System.out.print(i + " ");
+                }
+            }
+            System.out.println();
+        } else {
+            arr[L] = 1;
+            DFS(L+1);
+            arr[L] = 0;
+            DFS(L+1);
+        }
+    }
+```
+음 배열을 사용해서 BFS로 푸는 문제였다 \
+해설을 안보면 잘 모를 거 같다..이제 배웠으니 할 수 있겠죠
