@@ -38,3 +38,17 @@ public static int bfs(int num) {
 배열을 만들어서 저장해 나가면 된다!\
 근데 배열에 값이 있다면 바로 리턴하게해서 (미리 저장된 값을 리턴함)\
 반복수행을 제거함 (메모이제이션)
+
+[이진트리순회](이진트리순회.java)
+```
+public static void preorder(Node node) {
+        System.out.print(node.data + " ");
+        if (node.lt != null) {
+            preorder(node.lt);
+        }
+        if (node.rt != null) {
+            preorder(node.rt);
+        }
+    }
+```
+오랜만에 이진트리순회 전위,후위, 중위에 대해 코딩해보았다..!
