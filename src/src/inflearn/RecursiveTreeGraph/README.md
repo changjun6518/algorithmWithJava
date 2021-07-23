@@ -99,3 +99,32 @@ public static void BFS(Node node) {
 }
 ```
 queue를 사용해서 bfs 구현!
+
+[송아지찾기](송아지찾기.java)
+```
+public int BFS(int s, int e) {
+    ch = new int[10001];
+    ch[s] = 1;
+    queue.offer(s);
+    int L = 0;
+    while (!queue.isEmpty()) {
+        int len = queue.size();
+        for (int i = 0; i < len; i++) {
+            Integer x = queue.poll();
+            if (x == e) {
+                return L;
+            }
+            for (int j = 0; j < 3; j++) {
+                int nx = x + dis[j];
+                if (nx > 1 && nx < 10001 && ch[nx] == 0) {
+                    ch[nx] = 1;
+                    queue.offer(nx);
+                }
+            }
+        }
+        L++;
+    }
+    return 0;
+}
+```
+설명없이 혼자 못하겠다 풀다보면 적응되고 할 수 있지 않을까? 아직 처음이니깐
