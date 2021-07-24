@@ -156,3 +156,17 @@ for (int i = 1; i < nodeNum + 1; i++) {
 }
 ```
 경로탐색 DFS graph입력 받고 갔던 곳 check하면서 진행
+
+[경로탐색인접행렬](경로탐색인접행렬.java)
+```
+for (Integer nextVertex : graph.get(ver)) {
+    if (check[nextVertex] == 0) {
+        check[nextVertex] = 1;
+        DFS(nextVertex);
+        check[nextVertex] = 0;
+    }
+}
+
+static ArrayList<ArrayList<Integer>> graph = new ArrayList<ArrayList<Integer>>();
+```
+인접행렬로 구현할때는 위와 같이 ArrayList를 두겹으로 쌓아준다! 좋다
