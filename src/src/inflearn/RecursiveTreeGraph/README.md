@@ -170,3 +170,20 @@ for (Integer nextVertex : graph.get(ver)) {
 static ArrayList<ArrayList<Integer>> graph = new ArrayList<ArrayList<Integer>>();
 ```
 인접행렬로 구현할때는 위와 같이 ArrayList를 두겹으로 쌓아준다! 좋다
+
+[그래프최단거리](그래프최단거리.java)
+```
+while (!queue.isEmpty()) {
+    Integer currentVertex = queue.poll();
+    for (Integer nextVertex : graph.get(currentVertex)) {
+        if (check[nextVertex] == 0) {
+            check[nextVertex] = 1;
+            queue.offer(nextVertex);
+            dis[nextVertex] = dis[currentVertex] + 1;
+        }
+    }
+}
+```
+그래프최단거리는 BFS로 푸는 것인데 level로 푸는 방법도 있고\
+위와 같이 dis 1차행렬을 이용해서 dis[nextVertex] = dis[currentVertex] + 1 을\
+사용해서 푸는 방법이 있다!
