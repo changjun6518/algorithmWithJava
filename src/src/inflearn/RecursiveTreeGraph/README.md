@@ -144,3 +144,15 @@ public static int DFS(int L, Node node) {
 [tree말단노드까최소경로BFS](tree말단노드까최소경로BFS.java)
 
 계속 풀다보니 손쉽게 할 수 있었음...!
+
+[경로탐색DFS](경로탐색DFS.java)
+```
+for (int i = 1; i < nodeNum + 1; i++) {
+    if (ch[i] == 0 && graph[v][i] == 1) {
+        ch[i] = 1;
+        DFS(i);
+        ch[i] = 0;
+    }
+}
+```
+경로탐색 DFS graph입력 받고 갔던 곳 check하면서 진행
