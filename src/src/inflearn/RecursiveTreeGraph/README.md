@@ -128,3 +128,15 @@ public int BFS(int s, int e) {
 }
 ```
 설명없이 혼자 못하겠다 풀다보면 적응되고 할 수 있지 않을까? 아직 처음이니깐
+
+[tree말단노드까최소경로DFS](tree말단노드까최소경로DFS.java)
+```
+public static int DFS(int L, Node node) {
+    if (node.rt == null && node.lt == null) {
+        return L;
+    } else {
+        return Math.min(DFS(L + 1, node.lt), DFS(L + 1, node.rt));
+    }
+}
+```
+두갈래로 해서 최소값을 받겠다 (두갈래아니면 에러)\
