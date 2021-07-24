@@ -140,3 +140,7 @@ public static int DFS(int L, Node node) {
 }
 ```
 두갈래로 해서 최소값을 받겠다 (두갈래아니면 에러)\
+
+[tree말단노드까최소경로BFS](tree말단노드까최소경로BFS.java)
+
+계속 풀다보니 손쉽게 할 수 있었음...!
