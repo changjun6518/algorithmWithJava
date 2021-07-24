@@ -155,9 +155,9 @@ for (int i = 1; i < nodeNum + 1; i++) {
     }
 }
 ```
-경로탐색 DFS graph입력 받고 갔던 곳 check하면서 진행
+경로탐색 DFS graph입력 받고 갔던 곳 check하면서 진행 ( 인접행렬 )
 
-[경로탐색인접행렬](경로탐색인접행렬.java)
+[경로탐색인접리스트](경로탐색인접리스트.java)
 ```
 for (Integer nextVertex : graph.get(ver)) {
     if (check[nextVertex] == 0) {

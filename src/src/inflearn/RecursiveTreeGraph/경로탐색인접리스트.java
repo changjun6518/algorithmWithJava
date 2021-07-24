@@ -3,7 +3,7 @@ package inflearn.RecursiveTreeGraph;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class 경로탐색인접행렬 {
+public class 경로탐색인접리스트 {
     static int vertex, edge, answer = 0;
     static ArrayList<ArrayList<Integer>> graph = new ArrayList<ArrayList<Integer>>();
     static int[] check;
