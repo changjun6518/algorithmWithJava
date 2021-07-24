@@ -7,5 +7,6 @@
 [배열](./src/src/inflearn/Array/)\
 [투포인터와창으로자르기](./src/src/inflearn/twoPointerAndSlidingWindow/)\
 [해쉬,정렬지원 Set](./src/src/inflearn/HashAndTree/)\
-[자료구조(stack,queue)](./src/src/inflearn/StackQueue/)
-
+[자료구조(stack,queue)](./src/src/inflearn/StackQueue/)\
+[정렬, 이분검색과 결정알고리즘](./src/src/inflearn/SortingSearching/)\
+[Recursive,Tree,Graph(DFS,BFS기초)](./src/src/inflearn/RecursiveTreeGraph/)
