@@ -32,9 +32,7 @@ public class 최대점수구하기 {
         } else {
             DFS(timeSum + timeToSolve[level], scoreSum + scoreByProblem[level], level + 1);
             DFS(timeSum, scoreSum, level + 1);
-
         }
-
     }
 
 //    5 20
