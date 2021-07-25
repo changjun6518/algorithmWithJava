@@ -20,3 +20,25 @@ public static void DFS(int[] arr, int sum, int level) {
 배열에 넣고 한칸씩 두갈래로 진행하는 DFS를 만들면 됨\
 flag 넣어서 retrun하게끔 설계하고\
 default로 answer에 NO 넣어두고 조건만족할때 YES로 바꿈
+
+[바둑이승차](바둑이승차.java)
+```
+static public void DFS(int sum, int level) {
+    if (limitWeight < sum) {
+        return;
+    }
+    if (level == count) {
+        answer = Math.max(sum, answer);
+    }
+    else {
+
+        if (answer <= sum) {
+            answer = sum;
+        }
+        DFS(sum + arr[level], level + 1);
+        DFS(sum, level + 1);
+    }
+}
+```
+자잘한 조건들의 순서도 중요한 것 같다 \
+조건 위치가 바뀌면 index 범위를 넘어선다
