@@ -42,3 +42,20 @@ static public void DFS(int sum, int level) {
 ```
 자잘한 조건들의 순서도 중요한 것 같다 \
 조건 위치가 바뀌면 index 범위를 넘어선다
+
+[최대점수구하기](최대점수구하기.java)
+```
+public static void DFS(int timeSum, int scoreSum, int level) {
+    if (timeSum > timeLimit) {
+        return;
+    }
+    if (problemCount == level) {
+        answer = Math.max(scoreSum, answer);
+    } else {
+        DFS(timeSum + timeToSolve[level], scoreSum + scoreByProblem[level], level + 1);
+        DFS(timeSum, scoreSum, level + 1);
+    }
+}
+```
+저 problemCount == level부분에 대한 이해가 필요 생각좀 (부분집합이 완성되는 조건)\
+부분 집합이 완성 안되면 DFS로 계속 보내는 else코드를 보낼 수 있음 ( < 하면 else로 안넘어가서 안댐 )
