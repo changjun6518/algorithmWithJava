@@ -59,3 +59,23 @@ public static void DFS(int timeSum, int scoreSum, int level) {
 ```
 저 problemCount == level부분에 대한 이해가 필요 생각좀 (부분집합이 완성되는 조건)\
 부분 집합이 완성 안되면 DFS로 계속 보내는 else코드를 보낼 수 있음 ( < 하면 else로 안넘어가서 안댐 )
+
+[중복순열](중복순열.java)
+```
+public static void DFS(int level) {
+    if (level == limitNum) {
+        for (int i : purmutation) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+    } else {
+        for (int i = 1; i <= totalCount; i++) {
+            purmutation[level] = i;
+            DFS(level + 1);
+        }
+    }
+}
+```
+중복 순열 출력!\
+음.. purmutation. level하는 부분에 대한 이해가 어려웠다\
+level로 인덱스를 가르치면서 조건문을 거는 것!!
