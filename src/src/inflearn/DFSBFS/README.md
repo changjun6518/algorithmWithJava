@@ -79,3 +79,24 @@ public static void DFS(int level) {
 중복 순열 출력!\
 음.. purmutation. level하는 부분에 대한 이해가 어려웠다\
 level로 인덱스를 가르치면서 조건문을 거는 것!!
+
+[동전교환](동전교환.java)
+```
+public static void DFS(int level, int sum) {
+    if (sum > exchangeMoney) {
+        return;
+    }
+    if (level >= answer) {
+        return;
+    }
+    if (sum == exchangeMoney) {
+        answer = Math.min(level, answer);
+    } else {
+        for (int i = 0; i < totalCount; i++) {
+            DFS(level + 1, sum + coins[i]);
+        }
+    }
+}
+```
+DFS로 해설했지만 BFS로 target금액만났을때 level을 답으로 하는 방법도 생각해볼것\
+나도 이렇게 할까 했지만 실패..
