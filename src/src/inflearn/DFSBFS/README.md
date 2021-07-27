@@ -100,3 +100,7 @@ public static void DFS(int level, int sum) {
 ```
 DFS로 해설했지만 BFS로 target금액만났을때 level을 답으로 하는 방법도 생각해볼것\
 나도 이렇게 할까 했지만 실패..
+
+[순열구하기](순열구하기.java)
+
+음 간단히 생각하고 풀 수 있었음...! 설명만 읽고 코딩! check배열 사용
