@@ -104,3 +104,18 @@ DFS로 해설했지만 BFS로 target금액만났을때 level을 답으로 하는
 [순열구하기](순열구하기.java)
 
 음 간단히 생각하고 풀 수 있었음...! 설명만 읽고 코딩! check배열 사용
+
+[조합수](조합수.java)
+```
+public static int DFS(int N, int R) {
+    if (memory[N][R] > 0) {
+        return memory[N][R];
+    }
+    if (N == R || R == 0) {
+        return 1;
+    } else {
+        return memory[N][R] = DFS(N - 1, R - 1) + DFS(N - 1, R);
+    }
+}
+```
+쫄지마라 메모이제이션을 활요함!
