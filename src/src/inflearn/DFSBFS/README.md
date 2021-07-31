@@ -149,3 +149,24 @@ public static void DFS(int x, int y) {
 ```
 나는 미로배열을 벽까지 생각하여 +2를 해줬지만\
 조건문에서 nx, ny를 범위에 만족하도록 설정할 수도 있음
+[미로최단거리](미로최단거리.java)
+```
+public static void BFS(int x, int y) {
+    LinkedList<Point> queue = new LinkedList<>();
+    queue.add(new Point(x, y));
+    while (!queue.isEmpty()) {
+        Point currentPoint = queue.poll();
+        for (int i = 0; i < 4; i++) {
+            int nx = currentPoint.x + dx[i];
+            int ny = currentPoint.y + dy[i];
+            if (nx >= 1 && nx <= 7 && ny >= 1 && ny <= 7 && miro[nx][ny] == 0) {
+                queue.add(new Point(nx, ny));
+                miro[nx][ny] = 1;
+                dis[nx][ny] = dis[currentPoint.x][currentPoint.y] + 1;
+            }
+        }
+    }
+}
+```
+DFS로도 풀 수 있지만 최단거리는 엥간하면 BFS로 풀자\
+여기서는 한칸씩 나아가면서 걸어온 길이를 저장하는 배열(dis)을 통해 풀었음
