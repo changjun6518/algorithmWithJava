@@ -128,3 +128,24 @@ public static int DFS(int N, int R) {
 [조합구하기](조합구하기.java)
 
 간단하게 조합을 출력하는 문제!
+
+[미로탐색](미로탐색.java)
+```
+public static void DFS(int x, int y) {
+    if (x == 7 && y ==7) {
+        answer++;
+    } else {
+        for (int i = 0; i < 4; i++) {
+            int nx = dx[i] + x;
+            int ny = dy[i] + y;
+            if (miro[nx][ny] == 0) {
+                miro[nx][ny] = 1;
+                DFS(nx, ny);
+                miro[nx][ny] = 0;
+            }
+        }
+    }
+}
+```
+나는 미로배열을 벽까지 생각하여 +2를 해줬지만\
+조건문에서 nx, ny를 범위에 만족하도록 설정할 수도 있음
