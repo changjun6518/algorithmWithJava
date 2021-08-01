@@ -1,6 +1,6 @@
-##알고리즘 문제풀이
+## 알고리즘 문제풀이
 
-###inflearn 강의
+### inflearn 강의
 [문자열](./src/src/inflearn/String/)    
 [배열](./src/src/inflearn/Array/)\
 [투포인터와창으로자르기](./src/src/inflearn/twoPointerAndSlidingWindow/)\
