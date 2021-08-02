@@ -180,3 +180,30 @@ bfs로 푸는 문제 접근 방식에 따라 약간의 차이가 있음\
 [섬나라아일랜드](섬나라아일랜드.java)
 
 이것도 인덱스 조심하구 밖에서 answer를 체크하는 문제였다
+
+[피자배달거리](피자배달거리.java)
+```
+public static void DFS(int level, int index) {
+    if (level == m) {
+        int sum = 0;
+        for (Point house : houses) {
+            int dis = Integer.MAX_VALUE;
+            for (int i : combi) {
+                dis = Math.min(dis, Math.abs(house.x - pizzaHouses.get(i).x) + Math.abs(house.y - pizzaHouses.get(i).y));
+            }
+            sum += dis;
+        }
+        answer = Math.min(answer, sum);
+    } else {
+        for (int i = index; i < pizzaHouseLength; i++) {
+            combi[level] = i;
+            DFS(level + 1, i + 1);
+        }
+    } 
+}
+```
+이런 식으로 활용할 수 있구나\
+주체는 집이다 집마다 최소피자거리의 모든 합을 구하기 문제\
+최소피자집에 해당하는 피자집을 선택해야하기 때문에 조합\
+어떤 조합일때 최소가 되는지 조합을 구하는 DFS로\
+순열 조합에 대한 숙달 필요
