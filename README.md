@@ -8,7 +8,9 @@
 [자료구조(stack,queue)](./src/src/inflearn/StackQueue/)\
 [정렬, 이분검색과 결정알고리즘](./src/src/inflearn/SortingSearching/)\
 [Recursive,Tree,Graph(DFS,BFS기초)](./src/src/inflearn/RecursiveTreeGraph/)\
-[DFS/BFS](./src/src/inflearn/DFSBFS/)
+[DFS/BFS](./src/src/inflearn/DFSBFS/)\
+[그리디알고리즘](./src/src/inflearn/GreedyAlgorithm/)
+
 
 ### 프로그래머스
 [키패드만들기](./src/src/programmers/키패드만들기/)    
