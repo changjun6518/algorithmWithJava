@@ -14,3 +14,7 @@ public static void greedy(ArrayList<Point> players) {
 }
 ```
 우선 키부터 정렬하고 몸무게만 비교해서 해당하는지 체크하면 되는 문제
+
+[회의실배정](회의실배정.java)
+
+가볍게 Comparable 사용해서 풀 수 있었다
