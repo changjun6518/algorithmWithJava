@@ -38,11 +38,6 @@ public class 최대수스케쥴 {
                 max = limitDay;
             }
         }
-        Collections.sort(schedules);
-        for (Schedule schedule : schedules) {
-            System.out.println(schedule.price);
-            System.out.println(schedule.limitDay);
-        }
         greedy(schedules);
         System.out.println(sum);
 
