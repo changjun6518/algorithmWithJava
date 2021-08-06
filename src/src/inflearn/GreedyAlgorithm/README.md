@@ -54,3 +54,26 @@ for (int i = max; i >= 1; i--) {\
 for (; j < n; j++)\
 for문 돌릴 때 2중 포문인데 저렇게 할 수 있음
 
+[다익스트라](다익스트라.java)
+```
+public static void solution(int v) {
+    PriorityQueue<Edge> pQ = new PriorityQueue<>();
+    pQ.offer(new Edge(v, 0));
+    dis[v] = 0;
+    while (!pQ.isEmpty()) {
+        Edge temp = pQ.poll();
+        int now = temp.vex;
+        int cost = temp.cost;
+        if (dis[now] < cost) {
+            continue;
+        }
+        for (Edge edge : graph.get(now)) {
+            if (edge.cost + cost < dis[edge.vex]) {
+                dis[edge.vex] = edge.cost + cost;
+                pQ.offer(new Edge(edge.vex, edge.cost + cost));
+            }
+        }
+    }
+}
+```
+음 솔직히 잘 모르겠는데 이건 반복하면서 이해하도록
