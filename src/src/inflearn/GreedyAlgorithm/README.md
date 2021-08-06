@@ -77,3 +77,7 @@ public static void solution(int v) {
 }
 ```
 음 솔직히 잘 모르겠는데 이건 반복하면서 이해하도록
+
+[친구인가](친구인가.java)
+
+union과 find -> 서로소를 만드는 함수...!
