@@ -81,3 +81,44 @@ public static void solution(int v) {
 [친구인가](친구인가.java)
 
 union과 find -> 서로소를 만드는 함수...!
+
+[원더랜드](원더랜드.java)
+```
+public static void minSpanningTree(ArrayList<Edge> graph) {
+    Collections.sort(graph);
+    for (Edge edge : graph) {
+        int fa = find(edge.startNode);
+        int fb = find(edge.endNode);
+        if (fa != fb) {
+            union(edge.startNode, edge.endNode);
+            sum += edge.cost;
+        }
+    }
+}
+```
+크루스칼<br>
+union&find로 푸는 문제\
+비용이 제일 작은 것 부터 체크해 나가면서 같은 집합인지 확인만 해주면 끝
+
+[원더랜드2](원더랜드2.java)
+```
+PriorityQueue<Edge> pQ = new PriorityQueue<>();
+pQ.offer(new Edge(1, 0));
+while (!pQ.isEmpty()) {
+    Edge tmp = pQ.poll();
+    int ev = tmp.nextNode;
+    if (ch[ev] == 0) {
+        ch[ev] = 1;
+        sum += tmp.cost;
+        for (Edge edge : graph.get(ev)) {
+            if (ch[edge.nextNode] == 0) {
+                pQ.offer(new Edge(edge.nextNode, edge.cost));
+            }
+        }
+    }
+}
+```
+프림\
+우선순위 큐로 푸는 문제\
+노드에 방문 여부 체크하면서 노드에 붙어 있는 노드들 모두 우선순위 큐에 넣고\
+제일 작은 값 꺼내서 체크해나가는 방식
