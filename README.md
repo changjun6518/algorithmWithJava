@@ -9,7 +9,9 @@
 [정렬, 이분검색과 결정알고리즘](./src/src/inflearn/SortingSearching/)\
 [Recursive,Tree,Graph(DFS,BFS기초)](./src/src/inflearn/RecursiveTreeGraph/)\
 [DFS/BFS](./src/src/inflearn/DFSBFS/)\
-[그리디알고리즘](./src/src/inflearn/GreedyAlgorithm/)
+[그리디알고리즘](./src/src/inflearn/GreedyAlgorithm/)\
+[다이나믹프로그래밍](./src/src/inflearn/Dynamicprogramming/)
+
 
 
 ### 프로그래머스
