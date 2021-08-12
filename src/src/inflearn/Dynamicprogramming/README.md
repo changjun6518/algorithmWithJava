@@ -51,3 +51,20 @@ public static int solution(int[] coins) {
 ```
 dy[]는 해당 인덱스 가격의 동전 최소 동전 개수 저장배열이라고 생각하고\
 인덱스에서 coin을 뺀 곳에서 1을 더하면 해당 인덱스 최소 동전 개수이다
+
+[최대점수구하기냅색](최대점수구하기냅색.java)
+```
+public static int solution(ArrayList<problem> problems) {
+    Collections.sort(problems);
+    dy[0] = 0;
+    for (int i = 0; i < n; i++) {
+        problem problem = problems.get(i);
+        for (int j = m; j >= problem.time; j--) {
+            dy[j] = Math.max(dy[j], dy[j - problem.time] + problem.score);
+        }
+    }
+    return dy[m];
+}
+```
+나는 j를 증가하는 식으로 했지만 그렇게 되면 문제를 2번 푸는 중복이 발생한다\
+j를 거꾸로 내려오는 식으로 하면 중복을 막을 수 있었음...간단하지만 생각하기 쉽지않음
