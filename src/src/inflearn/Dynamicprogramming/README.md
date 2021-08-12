@@ -35,3 +35,19 @@ public static int solution(ArrayList<block> blocks) {
 ```
 조건이 2개이면 한 조건으로 정렬하고\
 다른 조건은 LIS방법으로 조건 확인하고 그 위에 올리는 느낌으로 접근한다
+
+[동전교환냅색](동전교환냅색.java)
+```
+public static int solution(int[] coins) {
+    Arrays.fill(dy, Integer.MAX_VALUE);
+    dy[0] = 0;
+    for (int i = 0; i < n; i++) {
+        for (int j = coins[i]; j < m + 1; j++) {
+            dy[j] = Math.min(dy[j], dy[j - coins[i]] + 1);
+        }
+    }
+    return dy[m];
+}
+```
+dy[]는 해당 인덱스 가격의 동전 최소 동전 개수 저장배열이라고 생각하고\
+인덱스에서 coin을 뺀 곳에서 1을 더하면 해당 인덱스 최소 동전 개수이다
