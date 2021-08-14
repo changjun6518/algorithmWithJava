@@ -54,11 +54,11 @@ dy[]는 해당 인덱스 가격의 동전 최소 동전 개수 저장배열이�
 
 [최대점수구하기냅색](최대점수구하기냅색.java)
 ```
-public static int solution(ArrayList<problem> problems) {
-    Collections.sort(problems);
+public static int solution(ArrayList<problem> problem2s) {
+    Collections.sort(problem2s);
     dy[0] = 0;
     for (int i = 0; i < n; i++) {
-        problem problem = problems.get(i);
+        problem problem = problem2s.get(i);
         for (int j = m; j >= problem.time; j--) {
             dy[j] = Math.max(dy[j], dy[j - problem.time] + problem.score);
         }

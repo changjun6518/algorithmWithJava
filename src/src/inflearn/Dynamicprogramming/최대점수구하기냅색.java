@@ -9,7 +9,7 @@ public class 최대점수구하기냅색 {
     static int[] dy;
     static int n, m;
 
-    private static class problem implements Comparable<problem>{
+    public static class problem implements Comparable<problem>{
         public int score;
         public int time;
 
@@ -23,6 +23,7 @@ public class 최대점수구하기냅색 {
             return this.time - o.time;
         }
     }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         n = scanner.nextInt();
