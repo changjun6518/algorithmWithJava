@@ -44,9 +44,7 @@ public class Main {
             int y = c + dy[i];
             if (x >= 0 && x < R && y >= 0 && y < C && !visited[arr[x][y]-'A']) {
                 visited[arr[x][y] - 'A'] = true;
-                checkDuplicate.add(arr[x][y]);
                 DFS(x, y, d + 1);
-                checkDuplicate.pop();
                 visited[arr[x][y] - 'A'] = false;
             }
         }
