@@ -15,3 +15,8 @@ charAt하면 ascii로 되니 주의하길 바람
 1. 방문여부 체크하고
 2. if(cnt==level) 체크해서
 3. 만족하면 조건 확인해서 출력!
+
+[알파벳](./알파벳/Main.java)
+
+방문여부 체크할때 ArrayList로 체크했는데 시간이 오래걸린다\
+그래서 음 visited 배열로 인덱스를 visited[arr[x][y]-'A']로 체크해서 시간을 줄였다
