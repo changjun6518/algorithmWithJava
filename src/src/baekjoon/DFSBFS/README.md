@@ -42,3 +42,9 @@ charAt하면 ascii로 되니 주의하길 바람
 3. 방문 여부 + command 쌓아가는 방식 이해
 4. 아니면 node를 만들어서 command를 전달하는 것도 나을수 있다
 5. Arrays.fill(배열, 넣고싶은값)
+
+[스타트링크](./스타트링크/Main.java)
+
+1. 최소의 횟수로 가는 거라 BFS를 선택
+2. level 반복을 queue에 들어있는 만큼 돌려서 level을 올려야 했는데 미스
+3. visited를 방문 여부 말고 여기에 값을 +1 시킬 수도 있음
