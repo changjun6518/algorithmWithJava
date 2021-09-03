@@ -1,4 +1,4 @@
-package programmers;
+package programmers.풀었던것;
 
 import java.util.Scanner;
 import java.util.Stack;

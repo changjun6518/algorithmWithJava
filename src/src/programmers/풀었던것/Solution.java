@@ -1,4 +1,4 @@
-package programmers;
+package programmers.풀었던것;
 
 public class Solution {
     public static void main(String[] args) {
