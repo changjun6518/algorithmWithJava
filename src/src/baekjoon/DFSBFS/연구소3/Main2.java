@@ -49,11 +49,11 @@ public class Main2 {
     }
 
     // virus를 M개 선택하기 위한 조합 구하기
-    public static void DFS(int level, int selectCount) {
+    public static void DFS(int start, int selectCount) {
         if (selectCount == M) {
             BFS(originEmptyCount);
         } else {
-            for (int i = level; i < viri.size(); i++) {
+            for (int i = start; i < viri.size(); i++) {
                 initVirus[selectCount] = viri.get(i);
                 DFS(i + 1, selectCount + 1);
             }
