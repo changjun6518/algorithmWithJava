@@ -15,10 +15,11 @@
 
 
 ### 프로그래머스
-[키패드만들기](./src/src/programmers/키패드만들기/)    
-[수식최대화](./src/src/programmers/수식최대화/)   
+[프로그래머스&기출문제들](./src/src/programmers/)
 
 
 ### 백준
 [DFS/BFS](./src/src/baekjoon/DFSBFS/)\
-[스택덱](./src/src/baekjoon/스택덱/)
+[스택덱](./src/src/baekjoon/스택덱/)\
+[시뮬레이션](./src/src/baekjoon/시뮬레이션/)\
+[재귀](./src/src/baekjoon/재귀/)
