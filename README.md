@@ -12,14 +12,20 @@
 [그리디알고리즘](./src/src/inflearn/GreedyAlgorithm/)\
 [다이나믹프로그래밍](./src/src/inflearn/Dynamicprogramming/)
 
-
+<br>
 
 ### 프로그래머스
 [프로그래머스&기출문제들](./src/src/programmers/)
 
+<br>
 
 ### 백준
 [DFS/BFS](./src/src/baekjoon/DFSBFS/)\
 [스택덱](./src/src/baekjoon/스택덱/)\
 [시뮬레이션](./src/src/baekjoon/시뮬레이션/)\
 [재귀](./src/src/baekjoon/재귀/)
+
+<br>
+
+### 연습
+[연습이필요한것들](./src/src/practice/)
