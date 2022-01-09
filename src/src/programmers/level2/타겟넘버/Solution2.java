@@ -9,30 +9,31 @@ public class Solution2 {
         int answer = bfs.getAnswer();
         System.out.println(answer);
     }
-}
 
-class BFS {
-    int answer = 0;
-    int target;
-    int[] numbers;
+    private static class BFS {
+        int answer = 0;
+        int target;
+        int[] numbers;
 
-    public BFS(int target, int[] numbers) {
-        this.target = target;
-        this.numbers = numbers;
-    }
-
-    public int getAnswer() {
-        return answer;
-    }
-
-    public void calculate(int level, int sum) {
-        if (numbers.length == level) {
-            if (sum == target) {
-                answer++;
-            }
-            return;
+        public BFS(int target, int[] numbers) {
+            this.target = target;
+            this.numbers = numbers;
         }
-        calculate(level + 1, sum + numbers[level]);
-        calculate(level + 1, sum - numbers[level]);
+
+        public int getAnswer() {
+            return answer;
+        }
+
+        public void calculate(int level, int sum) {
+            if (numbers.length == level) {
+                if (sum == target) {
+                    answer++;
+                }
+                return;
+            }
+            calculate(level + 1, sum + numbers[level]);
+            calculate(level + 1, sum - numbers[level]);
+        }
     }
+
 }
