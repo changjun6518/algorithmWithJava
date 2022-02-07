@@ -1,0 +1,39 @@
+package codingTest.Backtracking.N과M;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Arrays;
+import java.util.StringTokenizer;
+import java.util.stream.Collectors;
+
+public class Main2 {
+    static int[] arr;
+    static int N;
+    static int M;
+    static StringBuilder sb = new StringBuilder();
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        N = Integer.parseInt(st.nextToken());
+        M = Integer.parseInt(st.nextToken());
+
+        arr = new int[M];
+        dfs(0, 0);
+        System.out.println(sb.toString());
+    }
+
+    private static void dfs(int level, int start) {
+        if (level == M) {
+            for (int i : arr) {
+                sb.append(i).append(" ");
+            }
+            sb.append("\n");
+        } else {
+            for (int i = start; i < N; i++) {
+                arr[level] = i + 1;
+                dfs(level + 1, i + 1);
+            }
+        }
+    }
+}
