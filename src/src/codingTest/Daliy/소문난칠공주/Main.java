@@ -30,10 +30,6 @@ public class Main {
         if (level == 7) {
             if (check(combi)) {
                 answer++;
-                for (Student student : combi) {
-                    System.out.printf("%d,%d,%c\n", student.x , student.y ,student.name);
-                }
-                System.out.println();
             }
         } else {
             for (int i = start; i < 25; i++) {
@@ -58,12 +54,14 @@ public class Main {
     }
 
     private static boolean isAdjacent(Student[] combi) {
-        int count = 0;
         List<Student> list = Arrays.asList(combi);
         LinkedList<Student> Q = new LinkedList<>();
-        boolean[] visited = new boolean[7];
-        visited[0] = true;
-        Q.add(list.get(0));
+        boolean[][] visited = new boolean[25][25];
+        Student first = list.get(0);
+        Q.add(first);
+        visited[first.x][first.y] = true;
+        int count = 1;
+
         while (!Q.isEmpty()) {
             Student now = Q.poll();
             for (int i = 0; i < 4; i++) {
@@ -71,13 +69,12 @@ public class Main {
                 int ny = now.y + dy[i];
 
                 Student adj = new Student(nx, ny, 'T');
-                int index = list.indexOf(adj);
-                if (index == -1 || visited[index]) {
+                if (nx<0||ny<0||nx>=5||ny>=5||visited[nx][ny]) {
                     continue;
                 }
                 if (!list.contains(adj)) continue;
 
-                visited[index] = true;
+                visited[nx][ny] = true;
                 count++;
                 Q.add(adj);
             }
